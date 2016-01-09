@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- application is for the entire app, only cleared by app restart -->
-<jsp:useBean id="user4" class = "beans.User" scope="application"></jsp:useBean>
+<jsp:useBean id="user4" class = "mvcBeans.User" scope="application"></jsp:useBean>
 <jsp:setProperty name="user4" property="email" value="dustinjamesbrown@gmail.com"/>
 <jsp:setProperty name="user4" property="password" value="letmein"/>
 

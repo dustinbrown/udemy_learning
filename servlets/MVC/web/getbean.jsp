@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="user" class = "beans.User" scope="session"></jsp:useBean>
+<jsp:useBean id="user" class = "mvcBeans.User" scope="session"></jsp:useBean>
 Email: <%= user.getEmail()%>
 <br/>
 Password: <%= user.getPassword()%>

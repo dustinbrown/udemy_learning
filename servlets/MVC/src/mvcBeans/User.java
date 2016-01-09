@@ -1,4 +1,4 @@
-package beans;
+package mvcBeans;
 /**
  * Created by dbrown on 1/6/16.
  */

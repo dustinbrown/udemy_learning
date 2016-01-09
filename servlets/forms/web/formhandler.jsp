@@ -11,10 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="user" class="beans.user" scope="session"/>
+<jsp:useBean id="user" class="beans.User" scope="session"/>
 <jsp:setProperty property="*" name="user"/>
 
-<%= user.getUser()%>
+<%= user.getEmail()%>
 <%= user.getPassword()%>
 </body>
 </html>

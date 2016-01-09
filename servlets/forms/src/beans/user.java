@@ -2,16 +2,16 @@ package beans;
 /**
  * Created by dbrown on 1/9/16.
  */
-public class user {
-    private String user;
+public class User {
+    private String email;
     private String password;
 
-    public String getUser() {
-        return user;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

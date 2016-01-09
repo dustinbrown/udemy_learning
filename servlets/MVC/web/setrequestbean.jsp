@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- request is for a single browser request -->
-<jsp:useBean id="user3" class = "beans.User" scope="request"></jsp:useBean>
+<jsp:useBean id="user3" class = "mvcBeans.User" scope="request"></jsp:useBean>
 <jsp:setProperty name="user3" property="email" value="dustinjamesbrown@gmail.com"/>
 <jsp:setProperty name="user3" property="password" value="letmein"/>
 

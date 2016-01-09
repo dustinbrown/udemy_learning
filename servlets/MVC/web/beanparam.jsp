@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="user5" class="beans.User" scope="page"/>
+<jsp:useBean id="user5" class="mvcBeans.User" scope="page"/>
 <%-- if no value or param, you can set it via the property. ie URL/URI?password=blah
      You could also use a * that will take any param and set it --%>
 <jsp:setProperty name="user5" property="password" param="p"/>
