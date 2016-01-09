@@ -3,8 +3,9 @@ package beans;
  * Created by dbrown on 1/9/16.
  */
 public class User {
-    private String email;
-    private String password;
+    private String email = "";
+    private String password = "";
+    private String message = "";
 
     // Beans need a default constructor with no params
     public User() {
@@ -36,25 +37,15 @@ public class User {
         return message;
     }
 
-    private String message;
 
     public boolean validate() {
-        if (email == null) {
-            message = "No email address set";
-            return false;
-        }
-        if (password == null) {
-            message = "No password set";
-            return false;
-        }
-
         if (! email.matches("\\w+@\\w+\\.\\w+")) {
             message = "Invalid email address";
             return false;
         }
 
         if (password.length() < 8) {
-            message = "Message must be at least 8 characters";
+            message = "Password must be at least 8 characters";
             return false;
         } else if (password.matches("\\w*\\s+\\w*")) {
             message = "Password can not contain space";

@@ -10,10 +10,10 @@ public class controller extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         PrintWriter out = response.getWriter();
 
-        String user = request.getParameter("user");
+        String email = request.getParameter("email");
 
         out.println("<html>");
-        out.println("User via post: " + user);
+        out.println("Email via post: " + email);
         out.println("</html>");
     }
 
