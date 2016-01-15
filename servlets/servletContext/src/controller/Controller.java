@@ -19,6 +19,8 @@ public class Controller extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext context = getServletContext();
 
+        String admin = context.getInitParameter("admin");
+
         Integer hits = (Integer) context.getAttribute("hits");
 
         if(hits == null) {
@@ -32,6 +34,7 @@ public class Controller extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         out.println(hits);
+        out.println(admin);
     }
 
 }

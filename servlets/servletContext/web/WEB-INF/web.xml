@@ -11,4 +11,8 @@
         <servlet-name>Controller</servlet-name>
         <url-pattern>/s</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>admin</param-name>
+        <param-value>dustin</param-value>
+    </context-param>
 </web-app>
