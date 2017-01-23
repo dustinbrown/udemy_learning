@@ -36,7 +36,7 @@ public class Cookies extends HttpServlet {
         Cookie cookie = new Cookie("user", "dustin");
 
         cookie.setMaxAge(300); // Set to -1 as default which is deleted after the browser is closed
-        
+
         response.addCookie(cookie);
         out.println("Cookie set<br/>");
 
