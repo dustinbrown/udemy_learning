@@ -1,3 +1,5 @@
+package section9;
+
 import java.util.ArrayList;
 
 /**
@@ -9,7 +11,7 @@ public class Branch {
 
     @Override
     public String toString() {
-        return "Branch{" +
+        return "section9.Branch{" +
                 "name='" + name + '\'' +
                 ", customers=" + customers +
                 '}';
@@ -46,11 +48,11 @@ public class Branch {
     private Customer getCustomerByName(String name) {
         // Could be more than 1 jerry?
         return customers.stream().filter(e -> e.getName().equals(name)).findFirst().get();
-//        Optional<Customer> customer = customers.stream().filter(e -> e.getName().equals(name)).findFirst();
+//        Optional<section9.Customer> customer = customers.stream().filter(e -> e.getName().equals(name)).findFirst();
 //        if (customer.isPresent()) {
 //            return customer.get();
 //        } else {
-//            throw new Exception("Customer: " + name + " does not exist");
+//            throw new Exception("section9.Customer: " + name + " does not exist");
 //        }
     }
 

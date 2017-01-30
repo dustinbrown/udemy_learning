@@ -1,3 +1,5 @@
+package section9;
+
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -31,7 +33,7 @@ public class MobilePhone {
         if (contact.isPresent()) {
             return contact.get();
         } else {
-            throw new NoContactFound("Contact by name: " + name + " doesn't exist!");
+            throw new NoContactFound("section9.Contact by name: " + name + " doesn't exist!");
         }
     }
 
@@ -40,7 +42,7 @@ public class MobilePhone {
         if (contact.isPresent()) {
             return contact.get();
         } else {
-            throw new NoContactFound("Contact by Phone Number: " + phoneNumber + " doesn't exist!");
+            throw new NoContactFound("section9.Contact by Phone Number: " + phoneNumber + " doesn't exist!");
         }
     }
 

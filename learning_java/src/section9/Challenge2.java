@@ -1,15 +1,17 @@
+package section9;
+
 /**
  * Created by dbrown on 1/23/17.
  */
 public class Challenge2 {
     public static void main(String[] args) {
         MobilePhone mobilePhone = new MobilePhone();
-        System.out.println("Contact list: ");
+        System.out.println("section9.Contact list: ");
         mobilePhone.printContacts();
 
         mobilePhone.store("dustin", "111");
         mobilePhone.store("meaghan", "222");
-        System.out.println("Contact list: ");
+        System.out.println("section9.Contact list: ");
         mobilePhone.printContacts();
 
         try {
@@ -26,7 +28,7 @@ public class Challenge2 {
             mobilePhone.removeByName("meaghan1");
             mobilePhone.printContacts();
         } catch (NoContactFound e) {
-            System.out.println("Contact " + "meaghan1" + " was found!");
+            System.out.println("section9.Contact " + "meaghan1" + " was found!");
         }
 
 

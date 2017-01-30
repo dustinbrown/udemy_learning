@@ -1,3 +1,5 @@
+package section9;
+
 import java.util.ArrayList;
 
 /**
@@ -26,7 +28,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "section9.Customer{" +
                 "name='" + name + '\'' +
                 ", balance=" + balance +
                 ", transactions=" + transactions +

@@ -1,3 +1,5 @@
+package section9;
+
 import java.util.*;
 
 /**
@@ -142,7 +144,7 @@ public class Challenge4 {
                     .findFirst().get();
             return foundAlbum.getSongByName(title).get();
         } catch (NoSuchElementException e) {
-            System.out.println("Song with title: " + title + " does not exist");
+            System.out.println("section9.Song with title: " + title + " does not exist");
             return null;
         }
     }

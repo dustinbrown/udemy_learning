@@ -1,3 +1,5 @@
+package section9;
+
 import java.util.Scanner;
 
 /**

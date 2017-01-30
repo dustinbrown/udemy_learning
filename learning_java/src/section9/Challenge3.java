@@ -1,9 +1,11 @@
+package section9;
+
 /**
  * Created by dbrown on 1/25/17.
  */
 public class Challenge3 {
     public static void main(String[] args) {
-        Bank bank = new Bank("Deeje Bank");
+        Bank bank = new Bank("Deeje section9.Bank");
         bank.addBranch("branch1");
 
         Branch branch1 = bank.getBranch("branch1");
